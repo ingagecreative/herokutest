@@ -39,8 +39,9 @@ define('WP_ENV', env('WP_ENV') ?: 'production');
 /**
  * URLs
  */
-Config::define('WP_HOME', env('WP_HOME'));
-Config::define('WP_SITEURL', env('WP_SITEURL'));
+
+Config::define('WP_HOME', sprintf('http://%s', $_SERVER['HTTP_HOST']));
+Config::define('WP_SITEURL', sprintf('%s/wp', WP_HOME));
 
 /**
  * Custom Content Directory
