@@ -1,0 +1,55 @@
+{
+  "name": "herokutest",
+  "scripts": {
+  },
+  "env": {
+    "AUTH_KEY": {
+      "required": true
+    },
+    "AUTH_SALT": {
+      "required": true
+    },
+    "JAWSDB_MARIA_URL": {
+      "required": true
+    },
+    "LOGGED_IN_KEY": {
+      "required": true
+    },
+    "LOGGED_IN_SALT": {
+      "required": true
+    },
+    "MEMCACHEDCLOUD_PASSWORD": {
+      "required": true
+    },
+    "MEMCACHEDCLOUD_SERVERS": {
+      "required": true
+    },
+    "MEMCACHEDCLOUD_USERNAME": {
+      "required": true
+    },
+    "NONCE_KEY": {
+      "required": true
+    },
+    "NONCE_SALT": {
+      "required": true
+    },
+    "SECURE_AUTH_KEY": {
+      "required": true
+    },
+    "SECURE_AUTH_SALT": {
+      "required": true
+    },
+    "WP_ENV": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
